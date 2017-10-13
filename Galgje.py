@@ -1,3 +1,5 @@
+
+
 import random
 WORDS = [
     'people',
@@ -1578,7 +1580,8 @@ while True:
         renderWoord()
     if fouten >= 1000:
         print('You lost, the word was:' + words)
+        print('You have ', fouten, 'fouls')
+        print('wel done! bye! ')
+        time.sleep(1000)
+        print("")
         break
-        quit()
-    print('You have ', fouten, 'foul')
-print('wel done! bye! ')
