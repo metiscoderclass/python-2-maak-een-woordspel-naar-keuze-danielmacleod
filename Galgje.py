@@ -1551,7 +1551,7 @@ def renderWoord():
 renderWoord()
 
 while True:
-    letter = input('guess a letter')
+    letter = input('guess a letter ')
     if len(letter) == 1:
         if letter in letters:
             print('you alredy have that one...')
@@ -1578,7 +1578,7 @@ while True:
         print('+2 foul!')
         fouten += 2
         renderWoord()
-    if fouten >= 1000:
+    if fouten >= 15: #<--- choose the amount of lives here
         print('You lost, the word was:' + words)
         print('You have ', fouten, 'fouls')
         print('wel done! bye! ')
